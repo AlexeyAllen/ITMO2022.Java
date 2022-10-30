@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharp.Lab1.Ex1.Greeting", "ITMO2022.CSharp.Labs.Lab1.GreetingAndDivider\ITMO.CSharp.Lab1.Ex1.Greeting\ITMO.CSharp.Lab1.Ex1.Greeting.csproj", "{F643AA8C-AD89-4A1F-9C85-F7C3AB678A1F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F643AA8C-AD89-4A1F-9C85-F7C3AB678A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F643AA8C-AD89-4A1F-9C85-F7C3AB678A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F643AA8C-AD89-4A1F-9C85-F7C3AB678A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F643AA8C-AD89-4A1F-9C85-F7C3AB678A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
