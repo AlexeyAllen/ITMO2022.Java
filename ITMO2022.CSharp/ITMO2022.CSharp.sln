@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharp.Lab1.Ex1.Greeti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharp.Lab1.Ex4.Divider", "ITMO2022.CSharp.Labs.Lab1.GreetingAndDivider\ITMO.CSharp.Lab1.Ex4.Divider\ITMO.CSharp.Lab1.Ex4.Divider.csproj", "{CB900C04-0777-4756-AD5E-0F44E782C818}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharp.Lab2.Ex1.BankAccount", "ITMO2022.CSharp.Labs.Lab2.StructTypeAndBankAccount\ITMO.CSharp.Lab2.Ex1.BankAccount\ITMO.CSharp.Lab2.Ex1.BankAccount.csproj", "{45FA4CF6-40F5-42A9-8DA8-02AC84D06591}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CB900C04-0777-4756-AD5E-0F44E782C818}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB900C04-0777-4756-AD5E-0F44E782C818}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB900C04-0777-4756-AD5E-0F44E782C818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45FA4CF6-40F5-42A9-8DA8-02AC84D06591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45FA4CF6-40F5-42A9-8DA8-02AC84D06591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45FA4CF6-40F5-42A9-8DA8-02AC84D06591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45FA4CF6-40F5-42A9-8DA8-02AC84D06591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
