@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharp.Lab2.Ex2.Struct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharp.Lab2.Ex3.StructTypeIO", "ITMO2022.CSharp.Labs.Lab2.StructTypeAndBankAccount\ITMO.CSharp.Lab2.Ex3.StructTypeIO\ITMO.CSharp.Lab2.Ex3.StructTypeIO.csproj", "{52FE38D4-A1D1-4C21-9F3B-8BA60FFC6AAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Labs.Lab3.Ex1.WhatDay1", "ITMO2022.CSharp.Labs.Lab3.WhatDays\ITMO2022.CSharp.Labs.Lab3.Ex1.WhatDay1\ITMO2022.CSharp.Labs.Lab3.Ex1.WhatDay1.csproj", "{BAEE7DCA-393C-44FD-875D-0AA4EE47CDCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{52FE38D4-A1D1-4C21-9F3B-8BA60FFC6AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52FE38D4-A1D1-4C21-9F3B-8BA60FFC6AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52FE38D4-A1D1-4C21-9F3B-8BA60FFC6AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAEE7DCA-393C-44FD-875D-0AA4EE47CDCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAEE7DCA-393C-44FD-875D-0AA4EE47CDCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAEE7DCA-393C-44FD-875D-0AA4EE47CDCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAEE7DCA-393C-44FD-875D-0AA4EE47CDCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
