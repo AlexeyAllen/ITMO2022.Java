@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32802.440
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.CSharp.Lab1.Ex1.Greeting", "ITMO2022.CSharp.Labs.Lab1.GreetingAndDivider\ITMO.CSharp.Lab1.Ex1.Greeting\ITMO.CSharp.Lab1.Ex1.Greeting.csproj", "{F643AA8C-AD89-4A1F-9C85-F7C3AB678A1F}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Labs.Lab4.Ex1to3", "ITMO2022.CSharp.Labs.Lab4.GreaterAndSwapAndFactorial\ITMO2022.CSharp.Labs.Lab4.Ex1to3\ITMO2022.CSharp.Labs.Lab4.Ex1to3.csproj", "{977D3DC8-E888-42F1-9466-736B29803BB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Labs.Lab5.Ex1.FileDetails", "ITMO2022.CSharp.Labs.Lab5.FileDetailsAndMatrixMultiply\ITMO2022.CSharp.Labs.Lab5.Ex1.FileDetails\ITMO2022.CSharp.Labs.Lab5.Ex1.FileDetails.csproj", "{AB09E0A3-C10F-411C-B5AC-8479F009C054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5.Ex2.MatrixMultiply", "ITMO2022.CSharp.Labs.Lab5.FileDetailsAndMatrixMultiply\Lab5.Ex2.MatrixMultiply\Lab5.Ex2.MatrixMultiply.csproj", "{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{AB09E0A3-C10F-411C-B5AC-8479F009C054}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB09E0A3-C10F-411C-B5AC-8479F009C054}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB09E0A3-C10F-411C-B5AC-8479F009C054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
