@@ -76,7 +76,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CustomAttribute">
+    <Reference Include="CustomAttribute, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CustomAttribute\CustomAttribute\bin\Debug\CustomAttribute.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">

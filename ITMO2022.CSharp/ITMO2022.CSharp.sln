@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Lab11.Ex1.O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Lab11.Ex2.Events", "ITMO2022.CSharp.Labs.Lab11.OperatorOverloadAndEvents\ITMO2022.CSharp.Lab11.Ex2.Events\ITMO2022.CSharp.Lab11.Ex2.Events.csproj", "{23BDB89A-6DC3-4DCC-9FBE-ED71BC67CE15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Lab13.Ex2.DeveloperInfoAttribute", "ITMO2022.CSharp.Labs.Lab13.ConditionalAndDeveloperInfoAttribute\ITMO2022.CSharp.Lab13.Ex2.DeveloperInfoAttribute\RATIONAL\ITMO2022.CSharp.Lab13.Ex2.DeveloperInfoAttribute.csproj", "{49DAC9D3-695D-46A1-96EF-8F3EF238A773}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{23BDB89A-6DC3-4DCC-9FBE-ED71BC67CE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23BDB89A-6DC3-4DCC-9FBE-ED71BC67CE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23BDB89A-6DC3-4DCC-9FBE-ED71BC67CE15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49DAC9D3-695D-46A1-96EF-8F3EF238A773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49DAC9D3-695D-46A1-96EF-8F3EF238A773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49DAC9D3-695D-46A1-96EF-8F3EF238A773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49DAC9D3-695D-46A1-96EF-8F3EF238A773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
