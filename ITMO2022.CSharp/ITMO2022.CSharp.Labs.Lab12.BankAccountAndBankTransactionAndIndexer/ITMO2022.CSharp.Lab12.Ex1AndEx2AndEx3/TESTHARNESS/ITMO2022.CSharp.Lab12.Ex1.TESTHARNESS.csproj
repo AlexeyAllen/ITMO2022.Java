@@ -29,7 +29,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <TargetFrameworkProfile />
-    <ProjectGuid>{29F9953A-B627-4485-8E5E-216BBDE97DF9}</ProjectGuid>
+    <ProjectGuid>{7C1E918C-646F-4C39-B970-73CB1E4A8119}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
