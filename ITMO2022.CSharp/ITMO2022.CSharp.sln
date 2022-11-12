@@ -23,8 +23,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Labs.Lab4.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Labs.Lab5.Ex1.FileDetails", "ITMO2022.CSharp.Labs.Lab5.FileDetailsAndMatrixMultiply\ITMO2022.CSharp.Labs.Lab5.Ex1.FileDetails\ITMO2022.CSharp.Labs.Lab5.Ex1.FileDetails.csproj", "{AB09E0A3-C10F-411C-B5AC-8479F009C054}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Labs.Lab5.Ex2.MatrixMultiply", "ITMO2022.CSharp.Labs.Lab5.FileDetailsAndMatrixMultiply\Lab5.Ex2.MatrixMultiply\ITMO2022.CSharp.Labs.Lab5.Ex2.MatrixMultiply.csproj", "{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Labs.Lab6.Ex1.CreateAccount", "ITMO2022.CSharp.Labs.Lab6.BankAccAndUniqueNumAndMoreMethods\ITMO2022.CSharp.Lab6.Ex1.BankAcc\ITMO2022.CSharp.Labs.Lab6.Ex1.CreateAccount.csproj", "{09F2B0E3-87D6-4978-A91B-18144A759FD7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Labs.Lab6.Ex1.UniqueNUms", "ITMO2022.CSharp.Labs.Lab6.BankAccAndUniqueNumAndMoreMethods\ITMO2022.CSharp.Lab6.Ex2.UniqueNum\ITMO2022.CSharp.Labs.Lab6.Ex1.UniqueNUms.csproj", "{4397FCF2-87D3-43A8-AA49-5F3AA10784C1}"
@@ -56,6 +54,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Lab13.Ex1.Conditional", "ITMO2022.CSharp.Labs.Lab13.ConditionalAndDeveloperInfoAttribute\ITMO2022.CSharp.Lab13.Ex1.Conditional\TESTHARNESS\ITMO2022.CSharp.Lab13.Ex1.Conditional.csproj", "{29F9953A-B627-4485-8E5E-216BBDE97DF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Lab12.Ex1.TESTHARNESS", "ITMO2022.CSharp.Labs.Lab12.BankAccountAndBankTransactionAndIndexer\ITMO2022.CSharp.Lab12.Ex1AndEx2AndEx3\TESTHARNESS\ITMO2022.CSharp.Lab12.Ex1.TESTHARNESS.csproj", "{7C1E918C-646F-4C39-B970-73CB1E4A8119}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Labs.Lab5.Ex2.MatrixMultiply", "ITMO2022.CSharp.Labs.Lab5.FileDetailsAndMatrixMultiply\ITMO2022.CSharp.Labs.Lab5.Ex2.MatrixMultiply\ITMO2022.CSharp.Labs.Lab5.Ex2.MatrixMultiply.csproj", "{0DB94CD6-BE05-42BE-970D-6A529AB2364F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,10 +103,6 @@ Global
 		{AB09E0A3-C10F-411C-B5AC-8479F009C054}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB09E0A3-C10F-411C-B5AC-8479F009C054}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB09E0A3-C10F-411C-B5AC-8479F009C054}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3B01105-8AD9-46A5-B4DF-91525B59EEC7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{09F2B0E3-87D6-4978-A91B-18144A759FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{09F2B0E3-87D6-4978-A91B-18144A759FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F2B0E3-87D6-4978-A91B-18144A759FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -171,6 +167,10 @@ Global
 		{7C1E918C-646F-4C39-B970-73CB1E4A8119}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C1E918C-646F-4C39-B970-73CB1E4A8119}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C1E918C-646F-4C39-B970-73CB1E4A8119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB94CD6-BE05-42BE-970D-6A529AB2364F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB94CD6-BE05-42BE-970D-6A529AB2364F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB94CD6-BE05-42BE-970D-6A529AB2364F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB94CD6-BE05-42BE-970D-6A529AB2364F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
