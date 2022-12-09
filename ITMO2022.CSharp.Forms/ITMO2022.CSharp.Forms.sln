@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab01
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.GreenPeace", "ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.GreenPeace\ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.GreenPeace.csproj", "{8DD69483-261C-4CD7-928C-6345C6643061}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.Elastic", "ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.Elastic\ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.Elastic.csproj", "{AB7EEC36-A1C4-45F2-95F4-EE800265CD26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.Elastic", "ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.Elastic\ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.Elastic.csproj", "{AB7EEC36-A1C4-45F2-95F4-EE800265CD26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Forms.Lab02.Ex2.TestList", "ITMO2022.CSharp.Forms.Lab02.Ex2.TestList\ITMO2022.CSharp.Forms.Lab02.Ex2.TestList.csproj", "{00753D91-4753-4BD3-B834-9BBA47F3F2C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{AB7EEC36-A1C4-45F2-95F4-EE800265CD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB7EEC36-A1C4-45F2-95F4-EE800265CD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB7EEC36-A1C4-45F2-95F4-EE800265CD26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00753D91-4753-4BD3-B834-9BBA47F3F2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00753D91-4753-4BD3-B834-9BBA47F3F2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00753D91-4753-4BD3-B834-9BBA47F3F2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00753D91-4753-4BD3-B834-9BBA47F3F2C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
