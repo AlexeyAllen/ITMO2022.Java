@@ -64,6 +64,17 @@ namespace ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm
             set { numericUpDown4.Value = value; }
         }
 
+        public string Volume 
+        {
+            get { return textBox5.Text; }
+            set { textBox5.Text = value; }
+        }
+        public int Number
+        {
+            get { return (int)numericUpDown7.Value; }
+            set { numericUpDown7.Value = value; }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Book b = new Book(Author, Title, PublishHouse,
@@ -83,6 +94,8 @@ namespace ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm
 
         }
 
+
+
         private void button2_Click(object sender, EventArgs e)
         {
             if (SortInvNumber)
@@ -95,6 +108,19 @@ namespace ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm
             }
 
             richTextBox1.Text = sb.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Magazine m = new Magazine(Volume, Number, Title,
+           Year, InvNumber, Existence);
+
+            its.Add(m);
+
+            Volume = Title = "";
+            Number = InvNumber = Year = 0;
+            Year = 2020;
+            Existence = false;
         }
     }
 }

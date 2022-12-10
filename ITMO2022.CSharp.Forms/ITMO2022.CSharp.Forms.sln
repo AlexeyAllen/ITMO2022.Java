@@ -17,11 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab01
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.Elastic", "ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.Elastic\ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.Elastic.csproj", "{AB7EEC36-A1C4-45F2-95F4-EE800265CD26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Forms.Lab02.Ex2.TestList", "ITMO2022.CSharp.Forms.Lab02.Ex2.TestList\ITMO2022.CSharp.Forms.Lab02.Ex2.TestList.csproj", "{00753D91-4753-4BD3-B834-9BBA47F3F2C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab02.Ex2.TestList", "ITMO2022.CSharp.Forms.Lab02.Ex2.TestList\ITMO2022.CSharp.Forms.Lab02.Ex2.TestList.csproj", "{00753D91-4753-4BD3-B834-9BBA47F3F2C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Forms.Lab02.Ex5.WinContainer", "ITMO2022.CSharp.Forms.Lab02.Ex5.WinContainer\ITMO2022.CSharp.Forms.Lab02.Ex5.WinContainer.csproj", "{90DA22C9-40F8-4D29-8D8C-D89C3502F00E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab02.Ex5.WinContainer", "ITMO2022.CSharp.Forms.Lab02.Ex5.WinContainer\ITMO2022.CSharp.Forms.Lab02.Ex5.WinContainer.csproj", "{90DA22C9-40F8-4D29-8D8C-D89C3502F00E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm", "ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm\ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm.csproj", "{EC5E9DF8-6548-47B8-9E54-84CD7150150B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm", "ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm\ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm.csproj", "{EC5E9DF8-6548-47B8-9E54-84CD7150150B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Forms.Lab02.Ex7.RegistrationForm", "ITMO2022.CSharp.Forms.Lab02.Ex7.RegistrationForm\ITMO2022.CSharp.Forms.Lab02.Ex7.RegistrationForm.csproj", "{C643BD30-31EE-477D-9DE4-C83ADB47A6DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{EC5E9DF8-6548-47B8-9E54-84CD7150150B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC5E9DF8-6548-47B8-9E54-84CD7150150B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC5E9DF8-6548-47B8-9E54-84CD7150150B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C643BD30-31EE-477D-9DE4-C83ADB47A6DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C643BD30-31EE-477D-9DE4-C83ADB47A6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C643BD30-31EE-477D-9DE4-C83ADB47A6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C643BD30-31EE-477D-9DE4-C83ADB47A6DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

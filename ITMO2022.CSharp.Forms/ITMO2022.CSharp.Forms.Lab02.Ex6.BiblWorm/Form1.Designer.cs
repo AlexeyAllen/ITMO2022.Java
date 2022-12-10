@@ -49,25 +49,20 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
             this.button3 = new System.Windows.Forms.Button();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -75,9 +70,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.SuspendLayout();
             // 
@@ -277,22 +271,17 @@
             // tabPage2
             // 
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.numericUpDown7);
             this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.checkBox4);
             this.tabPage2.Controls.Add(this.checkBox5);
-            this.tabPage2.Controls.Add(this.numericUpDown5);
-            this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.numericUpDown6);
             this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.numericUpDown7);
-            this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.numericUpDown8);
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.textBox4);
             this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.textBox5);
             this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.textBox6);
             this.tabPage2.Controls.Add(this.label14);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
@@ -302,6 +291,13 @@
             this.tabPage2.Text = "Журналы";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // numericUpDown7
+            // 
+            this.numericUpDown7.Location = new System.Drawing.Point(99, 56);
+            this.numericUpDown7.Name = "numericUpDown7";
+            this.numericUpDown7.Size = new System.Drawing.Size(169, 27);
+            this.numericUpDown7.TabIndex = 35;
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(5, 332);
@@ -310,16 +306,7 @@
             this.button3.TabIndex = 33;
             this.button3.Text = "Добавить";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(108, 302);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(135, 24);
-            this.checkBox4.TabIndex = 32;
-            this.checkBox4.Text = "Возврат в срок";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // checkBox5
             // 
@@ -331,25 +318,9 @@
             this.checkBox5.Text = "Наличие";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.Location = new System.Drawing.Point(147, 265);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(119, 27);
-            this.numericUpDown5.TabIndex = 30;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(2, 267);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(139, 20);
-            this.label8.TabIndex = 29;
-            this.label8.Text = "Срок пользования";
-            // 
             // numericUpDown6
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(147, 223);
+            this.numericUpDown6.Location = new System.Drawing.Point(146, 186);
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(119, 27);
             this.numericUpDown6.TabIndex = 28;
@@ -357,33 +328,17 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(2, 225);
+            this.label9.Location = new System.Drawing.Point(2, 188);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 20);
             this.label9.TabIndex = 27;
             this.label9.Text = "Инвентарный";
             // 
-            // numericUpDown7
-            // 
-            this.numericUpDown7.Location = new System.Drawing.Point(99, 181);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(167, 27);
-            this.numericUpDown7.TabIndex = 26;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(2, 183);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 20);
-            this.label10.TabIndex = 25;
-            this.label10.Text = "Год издания";
-            // 
             // numericUpDown8
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(99, 138);
+            this.numericUpDown8.Location = new System.Drawing.Point(110, 138);
             this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(167, 27);
+            this.numericUpDown8.Size = new System.Drawing.Size(156, 27);
             this.numericUpDown8.TabIndex = 24;
             // 
             // label11
@@ -391,9 +346,9 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(2, 140);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(68, 20);
+            this.label11.Size = new System.Drawing.Size(102, 20);
             this.label11.TabIndex = 23;
-            this.label11.Text = "Страниц";
+            this.label11.Text = "Дата выпуска";
             // 
             // textBox4
             // 
@@ -407,41 +362,27 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(2, 102);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 20);
+            this.label12.Size = new System.Drawing.Size(77, 20);
             this.label12.TabIndex = 21;
-            this.label12.Text = "Издат-во";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(99, 51);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 27);
-            this.textBox5.TabIndex = 20;
+            this.label12.Text = "Название";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(2, 58);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 20);
+            this.label13.Size = new System.Drawing.Size(57, 20);
             this.label13.TabIndex = 19;
-            this.label13.Text = "Название";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(99, 6);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 27);
-            this.textBox6.TabIndex = 18;
+            this.label13.Text = "Номер";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(2, 13);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 20);
+            this.label14.Size = new System.Drawing.Size(37, 20);
             this.label14.TabIndex = 17;
-            this.label14.Text = "Автор";
+            this.label14.Text = "Том";
             // 
             // button2
             // 
@@ -462,6 +403,13 @@
             this.checkBox2.TabIndex = 18;
             this.checkBox2.Text = "Сортировка по инв. ном.";
             this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(96, 10);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(167, 27);
+            this.textBox5.TabIndex = 36;
             // 
             // Form1
             // 
@@ -486,9 +434,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -521,21 +468,16 @@
         private Button button2;
         private CheckBox checkBox2;
         private Button button3;
-        private CheckBox checkBox4;
         private CheckBox checkBox5;
-        private NumericUpDown numericUpDown5;
-        private Label label8;
         private NumericUpDown numericUpDown6;
         private Label label9;
-        private NumericUpDown numericUpDown7;
-        private Label label10;
-        private NumericUpDown numericUpDown8;
         private Label label11;
         private TextBox textBox4;
         private Label label12;
-        private TextBox textBox5;
         private Label label13;
-        private TextBox textBox6;
         private Label label14;
+        private NumericUpDown numericUpDown8;
+        private NumericUpDown numericUpDown7;
+        private TextBox textBox5;
     }
 }
