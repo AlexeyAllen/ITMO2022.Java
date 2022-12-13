@@ -41,6 +41,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab03
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Forms.Lab03.Ex1.WinFormsControlLibrary", "ITMO2022.CSharp.Forms.Lab03.Ex1.WinFormsControlLibrary\ITMO2022.CSharp.Forms.Lab03.Ex1.WinFormsControlLibrary.csproj", "{B04D266E-1319-45AD-A63E-0EE8E2BF8577}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.Forms.Lab03.Ex3.WinButNum", "ITMO2022.CSharp.Forms.Lab03.Ex3.WinButNum\ITMO2022.CSharp.Forms.Lab03.Ex3.WinButNum.csproj", "{99F47DBC-A909-4265-ACA9-8F2002D6BD8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.Forms.Lab03.Ex2.WinTimer2", "ITMO2022.CSharp.Forms.Lab03.Ex2.WinTimer2\ITMO2022.CSharp.Forms.Lab03.Ex2.WinTimer2.csproj", "{4D9836CD-38D5-486D-AAF5-AE41A8BA3F59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{B04D266E-1319-45AD-A63E-0EE8E2BF8577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B04D266E-1319-45AD-A63E-0EE8E2BF8577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B04D266E-1319-45AD-A63E-0EE8E2BF8577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F47DBC-A909-4265-ACA9-8F2002D6BD8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F47DBC-A909-4265-ACA9-8F2002D6BD8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F47DBC-A909-4265-ACA9-8F2002D6BD8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F47DBC-A909-4265-ACA9-8F2002D6BD8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9836CD-38D5-486D-AAF5-AE41A8BA3F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9836CD-38D5-486D-AAF5-AE41A8BA3F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9836CD-38D5-486D-AAF5-AE41A8BA3F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9836CD-38D5-486D-AAF5-AE41A8BA3F59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
