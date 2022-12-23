@@ -1,4 +1,6 @@
-namespace ITMO2022.CSharp.Forms.Lab03.Ex1.WinTimer2
+using ITMO2022.CSharp.Forms.Lab03.Ex1.WinTimer2;
+
+namespace ITMO2022.CSharp.Forms.Lab03.Ex2.WinTimer2
 {
     internal static class Program
     {

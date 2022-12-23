@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ITMO2022.CSharp.Forms.Lab03.Ex1.WinFormsControlLibrary\ITMO2022.CSharp.Forms.Lab03.Ex1.WinFormsControlLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

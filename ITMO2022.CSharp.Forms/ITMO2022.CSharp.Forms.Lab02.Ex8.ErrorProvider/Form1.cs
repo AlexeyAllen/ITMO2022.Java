@@ -53,6 +53,26 @@ namespace ITMO2022.CSharp.Forms.Lab02.Ex7.RegistrationForm
             }
         }
 
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                errorProvider1.SetError(textBox1, "Must be digit");
+                e.Handled = true;
+                MessageBox.Show(this, "Must be digit");
+            }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                errorProvider1.SetError(textBox1, "Must be digit");
+                e.Handled = true;
+                MessageBox.Show(this, "Must be digit");
+            }
+        }
+
         private void textBox2_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (textBox2.Text == "")

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MyClass
+namespace ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm.Bibl
 {
     class Book : Item
     {
-        private String author;
-        private String title;
-        private String publisher;
+        private string author;
+        private string title;
+        private string publisher;
         private int pages;
         private int year;
 
@@ -17,14 +17,14 @@ namespace MyClass
         private bool returnSrok;
 
         private static double price = 9;
-        
+
         static Book()       //статический конструктор
         {
             price = 100;
         }
 
-        
-        public Book(String author, String title, String publisher, int pages, int year, long invNumber, bool taken) : base (invNumber, taken)
+
+        public Book(string author, string title, string publisher, int pages, int year, long invNumber, bool taken) : base(invNumber, taken)
         {
             this.author = author;
             this.title = title;
@@ -45,23 +45,23 @@ namespace MyClass
 
         public override string ToString()
         {
-            if (this.IsAvailable())
-            return "\nКнига:\n Автор: " + author +"\n Название: " + title +
-            "\n Год издания: " + year + "., " + pages + " стр. \n Стоимость аренды: " + Book.price + " p.\n" + base.ToString()
-            + "\nИтого за чтение: " + cust + " p.";
+            if (IsAvailable())
+                return "\nКнига:\n Автор: " + author + "\n Название: " + title +
+                "\n Год издания: " + year + "., " + pages + " стр. \n Стоимость аренды: " + price + " p.\n" + base.ToString()
+                + "\nИтого за чтение: " + cust + " p.";
             else
-                return "\nКнига:\n Автор: " + author +"\n Название: " + title +
-            "\n Год издания: " + year + "., " + pages + " стр. \n Стоимость аренды: " + Book.price + " p.\n" + base.ToString();
+                return "\nКнига:\n Автор: " + author + "\n Название: " + title +
+            "\n Год издания: " + year + "., " + pages + " стр. \n Стоимость аренды: " + price + " p.\n" + base.ToString();
 
         }
 
         public void PriceBook(int s)
         {
 
-            if (this.returnSrok == true)
-                this.cust = s * price;
-            else this.cust = s * (price + price * 0.13); ;
-            
+            if (returnSrok == true)
+                cust = s * price;
+            else cust = s * (price + price * 0.13); ;
+
         }
 
         public void ReturnSrok()

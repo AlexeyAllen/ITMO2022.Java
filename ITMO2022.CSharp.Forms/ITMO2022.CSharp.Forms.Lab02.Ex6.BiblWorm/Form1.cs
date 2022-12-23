@@ -1,4 +1,4 @@
-using MyClass;
+using ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm.Bibl;
 using System.Text;
 using System.Windows.Forms;
 

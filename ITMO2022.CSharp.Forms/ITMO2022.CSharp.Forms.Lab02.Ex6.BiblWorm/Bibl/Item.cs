@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MyClass
+namespace ITMO2022.CSharp.Forms.Lab02.Ex6.BiblWorm.Bibl
 {
     abstract class Item : IComparable
     {
@@ -20,7 +20,7 @@ namespace MyClass
 
         public Item()
         {
-            this.taken = true;
+            taken = true;
         }
 
         public bool IsAvailable()    // истина, если этот предмет имеется в библиотеке
@@ -44,8 +44,8 @@ namespace MyClass
 
         public void TakeItem()
         {
-            if (this.IsAvailable())
-                this.Take();
+            if (IsAvailable())
+                Take();
         }
 
 
@@ -61,8 +61,8 @@ namespace MyClass
         int IComparable.CompareTo(object obj)
         {
             Item it = (Item)obj;
-            if (this.invNumber == it.invNumber) return 0;
-            else if (this.invNumber > it.invNumber) return 1;
+            if (invNumber == it.invNumber) return 0;
+            else if (invNumber > it.invNumber) return 1;
             else return -1;
         }
 

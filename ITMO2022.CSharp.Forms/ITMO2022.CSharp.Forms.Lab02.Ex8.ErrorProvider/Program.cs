@@ -1,4 +1,6 @@
-namespace ITMO2022.CSharp.Forms.Lab02.Ex7.RegistrationForm
+using ITMO2022.CSharp.Forms.Lab02.Ex7.RegistrationForm;
+
+namespace ITMO2022.CSharp.Forms.Lab02.Ex8.ErrorProvider
 {
     internal static class Program
     {

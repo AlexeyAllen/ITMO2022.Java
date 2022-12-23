@@ -1,4 +1,6 @@
-namespace ITMO2022.CSharp.Forms.Lab04.Ex2.EditPerson
+using ITMO2022.CSharp.Forms.Lab04.Ex2.EditPerson;
+
+namespace ITMO2022.CSharp.Forms.Lab04.Ex3.Person
 {
     internal static class Program
     {

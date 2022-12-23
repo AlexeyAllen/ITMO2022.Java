@@ -1,4 +1,4 @@
-namespace ITMO2022.CSharp.Forms.Lab01.Exercise05.Test
+namespace ITMO2022.CSharp.Forms.Lab01.Exercise05.Test.EllipseShape
 {
     internal static class Program
     {
