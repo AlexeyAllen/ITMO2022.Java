@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -25,7 +26,6 @@ namespace ITMO2022.CSharp.WPF.Lab01.Ex01.WpfHello
         public MyWindow()
         {
             InitializeComponent();
-
         }
 
         public void PrintLogFile()
