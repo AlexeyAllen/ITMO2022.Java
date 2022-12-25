@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.WPF.Lab03.E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.WPF.Lab04.Ex01.WpfHelloLab4", "ITMO2022.CSharp.WPF.Lab04.Ex01.WpfHelloLab4\ITMO2022.CSharp.WPF.Lab04.Ex01.WpfHelloLab4.csproj", "{FFC01DE5-AF91-47D8-98CE-CE4A260EEAAD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.WPF.Lab05.Ex01.WpfHelloLab5", "ITMO2022.CSharp.WPF.Lab05.Ex01.WpfHelloLab5\ITMO2022.CSharp.WPF.Lab05.Ex01.WpfHelloLab5.csproj", "{DECFE7B4-6C2D-4BFD-9CF3-0A5F75474415}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{FFC01DE5-AF91-47D8-98CE-CE4A260EEAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFC01DE5-AF91-47D8-98CE-CE4A260EEAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFC01DE5-AF91-47D8-98CE-CE4A260EEAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECFE7B4-6C2D-4BFD-9CF3-0A5F75474415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECFE7B4-6C2D-4BFD-9CF3-0A5F75474415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECFE7B4-6C2D-4BFD-9CF3-0A5F75474415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECFE7B4-6C2D-4BFD-9CF3-0A5F75474415}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
