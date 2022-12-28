@@ -5,10 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ITMO2022.CSharp.WPF.Lab01.Ex01.WpfHello"
         mc:Ignorable="d"
-        Title="MyWindow" Height="450" Width="800" Background="{StaticResource gradientStyle}" Closing="Window_Closing" Closed="Window_Closed">
+        Title="MyWindow" Height="450" Width="800" Background="{StaticResource gradientStyle}" 
+            Closing="Window_Closing" Closed="Window_Closed">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="MinHeight" Value="50"/>
+            <Setter Property="MinWidth" Value="50"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <!--<Ellipse Fill="Blue"/>-->
+                            <Rectangle>
+                                <Rectangle.Fill>
+                                    <RadialGradientBrush>
+                                        <GradientStop Color="Blue" Offset="0" />
+                                        <GradientStop Color="BlueViolet" Offset="1" />
+                                    </RadialGradientBrush>
+                                </Rectangle.Fill>
+                                <Rectangle.LayoutTransform>
+                                    <RotateTransform Angle="45"/>
+                                </Rectangle.LayoutTransform>
+                            </Rectangle>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Button Content="Button" HorizontalAlignment="Left" Margin="37,72,0,0" 
-                VerticalAlignment="Top" Click="Button_Click"/>
+                VerticalAlignment="Top" Click="Button_Click" Height="70" Width="70"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="167,77,0,0" 
                  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="80"
                  Width="120"/>
