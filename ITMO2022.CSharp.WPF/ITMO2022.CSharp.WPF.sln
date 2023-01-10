@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMO2022.CSharp.WPF.Lab11.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.CSharp.WPF.ExpenseIt", "ITMO2022.CSharp.WPF.ExpenseIt\ITMO2022.CSharp.WPF.ExpenseIt.csproj", "{F81ED83E-B3F5-421D-AFBC-07B2FC7C0FE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_MVVM", "ITMO2022.CSharp.WPF.MVVM\Wpf_MVVM.csproj", "{072B3B5E-660A-4419-9806-D8DC4F17879E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{F81ED83E-B3F5-421D-AFBC-07B2FC7C0FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F81ED83E-B3F5-421D-AFBC-07B2FC7C0FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F81ED83E-B3F5-421D-AFBC-07B2FC7C0FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072B3B5E-660A-4419-9806-D8DC4F17879E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072B3B5E-660A-4419-9806-D8DC4F17879E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072B3B5E-660A-4419-9806-D8DC4F17879E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072B3B5E-660A-4419-9806-D8DC4F17879E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
