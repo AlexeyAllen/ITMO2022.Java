@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding ="utf-8"?>
+<myns:lessons xmlns:myns ="http://www.itmo.ru/xml/lessons" 
+xmlns:litsrcCSh = "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+xmlns:litsrcPHP = "https://en.wikipedia.org/wiki/PHP"
+xmlns:litsrcCPP = "https://en.wikipedia.org/wiki/C%2B%2B">
+<myns:lesson id="C#">
+	<myns:LessonName>C#</myns:LessonName>
+	<myns:ProfSurname>Petrov</myns:ProfSurname>
+	<myns:Time>5 PM</myns:Time>
+	<myns:StartDate>02.02.2023</myns:StartDate>
+	<myns:EndDate>02.03.2023</myns:EndDate>
+	<litsrcCSh:Literature>Article</litsrcCSh:Literature>
+</myns:lesson>
+<myns:lesson id="php">
+	<myns:LessonName>PHP</myns:LessonName>
+	<myns:ProfSurname>Ivanov</myns:ProfSurname>
+	<myns:Time>6 PM</myns:Time>
+	<myns:StartDate>03.03.2023</myns:StartDate>
+	<myns:EndDate>03.04.2023</myns:EndDate>
+	<litsrcPHP:Literature>Article</litsrcPHP:Literature>
+	</myns:lesson>
+<myns:lesson id="C++">
+	<myns:LessonName>C++</myns:LessonName>
+	<myns:ProfSurname>Verhov</myns:ProfSurname>
+	<myns:Time>5 PM</myns:Time>
+	<myns:StartDate>04.04.2023</myns:StartDate>
+	<myns:EndDate>04.05.2023</myns:EndDate>
+	<litsrcCPP:Literature>Article</litsrcCPP:Literature>
+	</myns:lesson>
+</myns:lessons>
