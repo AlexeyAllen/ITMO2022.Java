@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library SYSTEM "libraryDTD.dtd">
+<library>
+	<book_catalog>
+		<book id="ID001" isbn="342132" year="1985" issue="vadsv">
+			<authors> 
+				<author>Georger W</author>
+				<author>Mark P</author>
+			</authors>
+			<title>&linux;</title>
+			<publishing>London</publishing>
+			<annotation>Best book ever</annotation>
+		</book>
+		<book id="ID001" isbn="342132" year="1985" issue="vadsv">
+			<authors> 
+				<author>Boris K</author>
+				<author>Lem S</author>
+			</authors>
+			<title>&internet;</title>
+			<publishing>Berlin</publishing>
+			<annotation>Awesome</annotation>
+		</book>
+	</book_catalog>
+	<author_catalog>
+		<author_book idref="another lybrary ref">M Twain</author_book>
+		<author_book idref="another lybrary ref">N Nosov</author_book>
+	</author_catalog>
+</library>
