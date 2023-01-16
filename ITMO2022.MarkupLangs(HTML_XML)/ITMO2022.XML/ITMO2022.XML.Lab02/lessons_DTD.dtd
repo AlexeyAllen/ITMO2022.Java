@@ -1,3 +1,4 @@
+<!ELEMENT lessons (lesson+)>
 <!ELEMENT lesson (LessonName, ProfSurname, Time, StartDate, EndDate)>
 <!ELEMENT LessonName (#PCDATA)>
 <!ELEMENT ProfSurname (#PCDATA)>

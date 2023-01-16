@@ -1,21 +1,21 @@
 <?xml version = "1.0" encoding ="utf-8"?>
 <!DOCTYPE lessons SYSTEM "lessons_DTD.dtd">
 <lessons>
-<lesson id="C#">
+<lesson>
 	<LessonName>C#</LessonName>
 	<ProfSurname>Petrov</ProfSurname>
 	<Time>5 PM</Time>
 	<StartDate>02.02.2023</StartDate>
 	<EndDate>02.03.2023</EndDate>
 </lesson>
-<lesson id="p">
+<lesson>
 	<LessonName>PHP</LessonName>
 	<ProfSurname>Ivanov</ProfSurname>
 	<Time>6 PM</Time>
 	<StartDate>03.03.2023</StartDate>
 	<EndDate>03.04.2023</EndDate>
 	</lesson>
-<lesson id="C++">
+<lesson>
 	<LessonName>C++</LessonName>
 	<ProfSurname>Verhov</ProfSurname>
 	<Time>5 PM</Time>
