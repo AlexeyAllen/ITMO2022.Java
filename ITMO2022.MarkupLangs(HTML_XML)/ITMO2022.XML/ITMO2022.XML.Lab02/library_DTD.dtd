@@ -17,7 +17,7 @@
 	year CDATA #REQUIRED 
 	issue (translation | original) "translation">  
 
-	<!ATTLIST author_book  idref IDREF #REQUIRED>
+	<!ATTLIST author_book idref IDREF #REQUIRED>
 
 <!ENTITY linux "Linux">
 <!ENTITY internet "Internet">
