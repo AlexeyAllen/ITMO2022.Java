@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab02.Ex02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab02.Ex03.DBConnection", "ITMO2022.ADO.Net.Lab02.Ex03.DBConnection\ITMO2022.ADO.Net.Lab02.Ex03.DBConnection.csproj", "{33B4B6F3-18A7-42E1-AA47-18EDC868CA07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab03.Ex01to02.DSConnect", "ITMO2022.ADO.Net.Lab03.Ex01to02.DSConnect\ITMO2022.ADO.Net.Lab03.Ex01to02.DSConnect.csproj", "{A84C9CFD-9695-415C-89A9-D28EEECC5476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab03.Ex03.DBCommand", "ITMO2022.ADO.Net.Lab03.Ex03.DBCommand\ITMO2022.ADO.Net.Lab03.Ex03.DBCommand.csproj", "{EC2E6236-208D-414C-9F48-37EB3D32CB08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{33B4B6F3-18A7-42E1-AA47-18EDC868CA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33B4B6F3-18A7-42E1-AA47-18EDC868CA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33B4B6F3-18A7-42E1-AA47-18EDC868CA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A84C9CFD-9695-415C-89A9-D28EEECC5476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84C9CFD-9695-415C-89A9-D28EEECC5476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84C9CFD-9695-415C-89A9-D28EEECC5476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84C9CFD-9695-415C-89A9-D28EEECC5476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC2E6236-208D-414C-9F48-37EB3D32CB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC2E6236-208D-414C-9F48-37EB3D32CB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC2E6236-208D-414C-9F48-37EB3D32CB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC2E6236-208D-414C-9F48-37EB3D32CB08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
