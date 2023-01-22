@@ -29,6 +29,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab04.Ex05
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab04.Ex06.DataViewExample", "ITMO2022.ADO.Net.Lab04.Ex06.DataViewExample\ITMO2022.ADO.Net.Lab04.Ex06.DataViewExample.csproj", "{A9172E32-DFE6-4788-BD58-E16D1709730B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab05.Ex01.DataSourcesWizard", "ITMO2022.ADO.Net.Lab05.Ex01.DataSourcesWizard\ITMO2022.ADO.Net.Lab05.Ex01.DataSourcesWizard.csproj", "{245B0DD4-AB00-49D9-9FE8-762D9A4F4A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab05.Ex02.DataBindingSimple", "ITMO2022.ADO.Net.Lab05.Ex02.DataBindingSimple\ITMO2022.ADO.Net.Lab05.Ex02.DataBindingSimple.csproj", "{C09FFA74-7567-4157-B091-65B1112988B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab05.Ex03.DataBindingComplex", "ITMO2022.ADO.Net.Lab05.Ex03.DataBindingComplex\ITMO2022.ADO.Net.Lab05.Ex03.DataBindingComplex.csproj", "{A8F246D7-AC1C-462C-A4EC-5214D95F8A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab05.Ex04.DataGridViewExample", "ITMO2022.ADO.Net.Lab05.Ex04.DataGridViewExample\ITMO2022.ADO.Net.Lab05.Ex04.DataGridViewExample.csproj", "{D3BD52F5-1721-4297-A400-ADF89096F2BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +95,22 @@ Global
 		{A9172E32-DFE6-4788-BD58-E16D1709730B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9172E32-DFE6-4788-BD58-E16D1709730B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9172E32-DFE6-4788-BD58-E16D1709730B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{245B0DD4-AB00-49D9-9FE8-762D9A4F4A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245B0DD4-AB00-49D9-9FE8-762D9A4F4A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245B0DD4-AB00-49D9-9FE8-762D9A4F4A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245B0DD4-AB00-49D9-9FE8-762D9A4F4A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09FFA74-7567-4157-B091-65B1112988B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09FFA74-7567-4157-B091-65B1112988B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09FFA74-7567-4157-B091-65B1112988B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09FFA74-7567-4157-B091-65B1112988B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8F246D7-AC1C-462C-A4EC-5214D95F8A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F246D7-AC1C-462C-A4EC-5214D95F8A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F246D7-AC1C-462C-A4EC-5214D95F8A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F246D7-AC1C-462C-A4EC-5214D95F8A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3BD52F5-1721-4297-A400-ADF89096F2BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3BD52F5-1721-4297-A400-ADF89096F2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3BD52F5-1721-4297-A400-ADF89096F2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3BD52F5-1721-4297-A400-ADF89096F2BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
