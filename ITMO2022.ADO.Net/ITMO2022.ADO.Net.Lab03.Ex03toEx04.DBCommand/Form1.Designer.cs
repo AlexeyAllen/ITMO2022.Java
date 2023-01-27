@@ -92,7 +92,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(27, 281);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 23);
+            this.button3.Size = new System.Drawing.Size(200, 23);
             this.button3.TabIndex = 4;
             this.button3.Text = "Создание таблицы";
             this.button3.UseVisualStyleBackColor = true;
@@ -106,15 +106,15 @@
             // 
             this.CityTextBox.Location = new System.Drawing.Point(27, 324);
             this.CityTextBox.Name = "CityTextBox";
-            this.CityTextBox.Size = new System.Drawing.Size(139, 22);
+            this.CityTextBox.Size = new System.Drawing.Size(200, 22);
             this.CityTextBox.TabIndex = 5;
             this.CityTextBox.Text = "CityTextBox";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(199, 324);
+            this.button4.Location = new System.Drawing.Point(274, 323);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(168, 23);
+            this.button4.Size = new System.Drawing.Size(222, 23);
             this.button4.TabIndex = 6;
             this.button4.Text = "Запрос с параметром";
             this.button4.UseVisualStyleBackColor = true;
@@ -131,7 +131,7 @@
             // 
             this.button5.Location = new System.Drawing.Point(27, 376);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 23);
+            this.button5.Size = new System.Drawing.Size(200, 23);
             this.button5.TabIndex = 7;
             this.button5.Text = "Процедура с параметром";
             this.button5.UseVisualStyleBackColor = true;
@@ -139,7 +139,7 @@
             // 
             // CategoryNameTextBox
             // 
-            this.CategoryNameTextBox.Location = new System.Drawing.Point(199, 376);
+            this.CategoryNameTextBox.Location = new System.Drawing.Point(274, 376);
             this.CategoryNameTextBox.Name = "CategoryNameTextBox";
             this.CategoryNameTextBox.Size = new System.Drawing.Size(168, 22);
             this.CategoryNameTextBox.TabIndex = 8;
@@ -147,7 +147,7 @@
             // 
             // OrdYearTextBox
             // 
-            this.OrdYearTextBox.Location = new System.Drawing.Point(385, 376);
+            this.OrdYearTextBox.Location = new System.Drawing.Point(472, 376);
             this.OrdYearTextBox.Name = "OrdYearTextBox";
             this.OrdYearTextBox.Size = new System.Drawing.Size(168, 22);
             this.OrdYearTextBox.TabIndex = 9;
