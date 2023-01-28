@@ -57,7 +57,7 @@
             this.подключениеКБДToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1246, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1246, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,7 +67,7 @@
             this.создатьСоединениеToolStripMenuItem,
             this.отключитьСоединениеToolStripMenuItem});
             this.подключениеКБДToolStripMenuItem.Name = "подключениеКБДToolStripMenuItem";
-            this.подключениеКБДToolStripMenuItem.Size = new System.Drawing.Size(166, 24);
+            this.подключениеКБДToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.подключениеКБДToolStripMenuItem.Text = "1 Подключение к БД";
             // 
             // создатьСоединениеToolStripMenuItem
@@ -109,9 +109,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(291, 525);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 16);
+            this.label2.Size = new System.Drawing.Size(308, 16);
             this.label2.TabIndex = 4;
-            this.label2.Text = "3 Изменение данных в таблицах";
+            this.label2.Text = "3 Изменение и сохранение данных в таблицах";
             // 
             // label3
             // 
