@@ -98,7 +98,7 @@ namespace ITMO2022.ADO.Net.Lab09.Ex02.CustomerManager
         {
             context.Orders.Add(new Order { ProductName = "Аудио", Quantity = 12, PurchaseDate = DateTime.Parse("12.01.2016") });
             context.Orders.Add(new Order { ProductName = "Видео", Quantity = 22, PurchaseDate = DateTime.Parse("10.01.2016") });
-            context.VipOrders.Add(new Order.VipOrder { ProductName = "Авто", Quantity = 101, PurchaseDate = DateTime.Parse("10.01.2016"), status = "Высокий" });
+            context.VipOrders.Add(new VipOrder { ProductName = "Авто", Quantity = 101, PurchaseDate = DateTime.Parse("10.01.2016"), status = "Высокий" });
             context.SaveChanges();
             orderlistBox.DataSource = context.Orders.ToList();
         }

@@ -52,12 +52,11 @@ namespace ITMO2022.ADO.Net.Lab09.Ex02.CodeFirst
             string s = ProductName + " " + Quantity + "шт., дата: " + PurchaseDate;
             return s;
         }
+    }
 
-        [Table("VipOrders")]
-        public class VipOrder : Order
-        {
-            public string status { get; set; }
-        }
-
+    //[Table("VipOrders")]
+    public class VipOrder : Order
+    {
+        public string status { get; set; }
     }
 }

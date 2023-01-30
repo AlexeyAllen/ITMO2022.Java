@@ -14,7 +14,7 @@ namespace ITMO2022.ADO.Net.Lab09.Ex02.CodeFirst
 
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<Order.VipOrder> VipOrders { get; set; }
+        public DbSet<VipOrder> VipOrders { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
