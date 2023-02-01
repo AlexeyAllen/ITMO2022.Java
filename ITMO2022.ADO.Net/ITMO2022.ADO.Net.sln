@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab09.Ex02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.Lab09.Ex03.CourseManager", "ITMO2022.ADO.Net.Lab09.Ex03.CourseManager\ITMO2022.ADO.Net.Lab09.Ex03.CourseManager.csproj", "{BBFBB73C-800F-4144-831A-75D244F5A94B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ADO.Net.ControlTask2", "ITMO2022.ADO.Net.ControlTask2\ITMO2022.ADO.Net.ControlTask2.csproj", "{26A407A5-4D69-4392-9929-A7DF3D82E9CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{BBFBB73C-800F-4144-831A-75D244F5A94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBFBB73C-800F-4144-831A-75D244F5A94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBFBB73C-800F-4144-831A-75D244F5A94B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26A407A5-4D69-4392-9929-A7DF3D82E9CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A407A5-4D69-4392-9929-A7DF3D82E9CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A407A5-4D69-4392-9929-A7DF3D82E9CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A407A5-4D69-4392-9929-A7DF3D82E9CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

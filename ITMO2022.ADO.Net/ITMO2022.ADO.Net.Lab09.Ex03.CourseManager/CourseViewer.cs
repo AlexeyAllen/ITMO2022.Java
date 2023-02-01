@@ -30,7 +30,7 @@ namespace ITMO2022.ADO.Net.Lab09.Ex03.CourseManager
             try
             {
                 this.departmentList.DisplayMember = "Name";
-                this.departmentList.DataSource = ((ObjectQuery)departmentQuery).Execute(MergeOption.AppendOnly);
+                this.departmentList.DataSource = (/*(ObjectQuery)*/departmentQuery)/*.Execute(MergeOption.AppendOnly)*/;
             }
             catch (Exception ex)
             {
