@@ -32,12 +32,12 @@ namespace ITMO2022.ADO.Net.ControlTask
 
         private SqlDataAdapter SqlDataAdapter1;
         private SqlDataAdapter SqlDataAdapter2;
-        private DataSet AdventureWorks2017DataSet = new DataSet("AdventureWorks2017");
-        private DataTable PersonsTable = new DataTable("Person.Person");
-        private DataTable StateProvinceTable = new DataTable("Person.StateProvince");
+        private DataSet ApressFinancialDataSet = new DataSet("ApressFinancial");
+        private DataTable CustomersTable = new DataTable("CustomerDetails.Customers");
+        private DataTable SharesTable = new DataTable("ShareDetails.Shares");
 
         string connect = $"Password={pass};Persist Security Info=True; User ID={login};" +
-                " Initial Catalog=AdventureWorks2017;Data Source=(localdb)\\Local";
+                " Initial Catalog=ApressFinancial;Data Source=(localdb)\\Local";
 
         private void создатьСоединениеToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -102,11 +102,11 @@ namespace ITMO2022.ADO.Net.ControlTask
             try
             {
                 SqlCommand command1 = connection.CreateCommand();
-                command1.CommandText = "Select * from Person.Person;";
+                command1.CommandText = "Select * from CustomerDetails.Customers;";
                 SqlDataAdapter1 = new SqlDataAdapter(command1.CommandText, connection);
-                AdventureWorks2017DataSet.Tables.Add(PersonsTable);
-                SqlDataAdapter1.Fill(AdventureWorks2017DataSet.Tables["Person.Person"]);
-                table1DataGridView.DataSource = AdventureWorks2017DataSet.Tables["Person.Person"];
+                ApressFinancialDataSet.Tables.Add(CustomersTable);
+                SqlDataAdapter1.Fill(ApressFinancialDataSet.Tables["CustomerDetails.Customers"]);
+                table1DataGridView.DataSource = ApressFinancialDataSet.Tables["CustomerDetails.Customers"];
                 SqlCommandBuilder commands = new SqlCommandBuilder(SqlDataAdapter1);
             }
             catch (Exception ex)
@@ -126,11 +126,11 @@ namespace ITMO2022.ADO.Net.ControlTask
             try
             {
                 SqlCommand command2 = connection.CreateCommand();
-                command2.CommandText = "Select * from Person.StateProvince";
+                command2.CommandText = "Select * from ShareDetails.Shares";
                 SqlDataAdapter2 = new SqlDataAdapter(command2.CommandText, connection);
-                AdventureWorks2017DataSet.Tables.Add(StateProvinceTable);
-                SqlDataAdapter2.Fill(AdventureWorks2017DataSet.Tables["Person.StateProvince"]);
-                table2DataGridView.DataSource = AdventureWorks2017DataSet.Tables["Person.StateProvince"];
+                ApressFinancialDataSet.Tables.Add(SharesTable);
+                SqlDataAdapter2.Fill(ApressFinancialDataSet.Tables["ShareDetails.Shares"]);
+                table2DataGridView.DataSource = ApressFinancialDataSet.Tables["ShareDetails.Shares"];
                 SqlCommandBuilder commands2 = new SqlCommandBuilder(SqlDataAdapter2);
             }
             catch (Exception ex)
@@ -149,8 +149,8 @@ namespace ITMO2022.ADO.Net.ControlTask
 
             try
             {
-                AdventureWorks2017DataSet.EndInit();
-                SqlDataAdapter1.Update(AdventureWorks2017DataSet.Tables["Person.Person"]);
+                ApressFinancialDataSet.EndInit();
+                SqlDataAdapter1.Update(ApressFinancialDataSet.Tables["CustomerDetails.Customers"]);
             }
             catch (Exception ex)
             {
@@ -168,8 +168,8 @@ namespace ITMO2022.ADO.Net.ControlTask
 
             try
             {
-                AdventureWorks2017DataSet.EndInit();
-                SqlDataAdapter2.Update(AdventureWorks2017DataSet.Tables["Person.StateProvince"]);
+                ApressFinancialDataSet.EndInit();
+                SqlDataAdapter2.Update(ApressFinancialDataSet.Tables["ShareDetails.Shares"]);
             }
             catch (Exception ex)
             {
@@ -185,15 +185,14 @@ namespace ITMO2022.ADO.Net.ControlTask
                 return;
             }
 
-            DataRow workRow = PersonsTable.NewRow();
-            workRow["BusinessEntityID"] = 20779;
-            workRow["FirstName"] = "Steve";
-            workRow["MiddleName"] = "F";
-            workRow["LastName"] = "Jim";
+            DataRow workRow = CustomersTable.NewRow();
+            workRow["CustomerID"] = 8;
+            workRow["CustomerFirstName"] = "Steve";
+            workRow["CustomerLastName"] = "Jobs";
 
             try
             {
-                AdventureWorks2017DataSet.Tables["Person.Person"].Rows.Add(workRow);
+                ApressFinancialDataSet.Tables["CustomerDetails.Customers"].Rows.Add(workRow);
             }
 
             catch (Exception ex)
@@ -210,13 +209,13 @@ namespace ITMO2022.ADO.Net.ControlTask
                 return;
             }
 
-            DataRow workRow = StateProvinceTable.NewRow();
-            workRow["StateProvinceID"] = 200;
-            workRow["Name"] = "ABCDEFG";
+            DataRow workRow = SharesTable.NewRow();
+            workRow["ShareID"] = 7;
+            workRow["ShareDesc"] = "Gazprom";
 
             try
             {
-                AdventureWorks2017DataSet.Tables["Person.StateProvince"].Rows.Add(workRow);
+                ApressFinancialDataSet.Tables["ShareDetails.Shares"].Rows.Add(workRow);
             }
 
             catch (Exception ex)
@@ -235,11 +234,11 @@ namespace ITMO2022.ADO.Net.ControlTask
 
             try
             {
-                int selectedBusinessEntityID =
-                (int)table1DataGridView.SelectedCells[0].OwningRow.Cells["BusinessEntityID"].Value;
-                PersonsTable.PrimaryKey = new DataColumn[] { PersonsTable.Columns["BusinessEntityID"] };
-                DataRow selectedRow = PersonsTable.Rows.Find(selectedBusinessEntityID);
-                AdventureWorks2017DataSet.Tables["Person.Person"].Rows.Remove(selectedRow);
+                long selectedCustomerID =
+                (long)table1DataGridView.SelectedCells[0].OwningRow.Cells["CustomerID"].Value;
+                CustomersTable.PrimaryKey = new DataColumn[] { CustomersTable.Columns["CustomerID"] };
+                DataRow selectedRow = CustomersTable.Rows.Find(selectedCustomerID);
+                ApressFinancialDataSet.Tables["CustomerDetails.Customers"].Rows.Remove(selectedRow);
             }
 
             catch (Exception ex)
@@ -258,11 +257,11 @@ namespace ITMO2022.ADO.Net.ControlTask
 
             try
             {
-                int selectedStateProvinceID =
-                (int)table2DataGridView.SelectedCells[0].OwningRow.Cells["StateProvinceID"].Value;
-                StateProvinceTable.PrimaryKey = new DataColumn[] { StateProvinceTable.Columns["StateProvinceID"] };
-                DataRow selectedRow = StateProvinceTable.Rows.Find(selectedStateProvinceID);
-                AdventureWorks2017DataSet.Tables["Person.StateProvince"].Rows.Remove(selectedRow);
+                long selectedShareID =
+                (long)table2DataGridView.SelectedCells[0].OwningRow.Cells["ShareID"].Value;
+                SharesTable.PrimaryKey = new DataColumn[] { SharesTable.Columns["ShareID"] };
+                DataRow selectedRow = SharesTable.Rows.Find(selectedShareID);
+                ApressFinancialDataSet.Tables["ShareDetails.Shares"].Rows.Remove(selectedRow);
             }
 
             catch (Exception ex)
