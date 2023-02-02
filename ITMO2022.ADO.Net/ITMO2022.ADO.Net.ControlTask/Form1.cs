@@ -30,6 +30,8 @@ namespace ITMO2022.ADO.Net.ControlTask
         static string pass;
         static string login;
 
+        DataView customersDataView;
+
         private SqlDataAdapter SqlDataAdapter1;
         private SqlDataAdapter SqlDataAdapter2;
         private DataSet ApressFinancialDataSet = new DataSet("ApressFinancial");
@@ -106,7 +108,11 @@ namespace ITMO2022.ADO.Net.ControlTask
                 SqlDataAdapter1 = new SqlDataAdapter(command1.CommandText, connection);
                 ApressFinancialDataSet.Tables.Add(CustomersTable);
                 SqlDataAdapter1.Fill(ApressFinancialDataSet.Tables["CustomerDetails.Customers"]);
-                table1DataGridView.DataSource = ApressFinancialDataSet.Tables["CustomerDetails.Customers"];
+
+                customersDataView = new DataView(ApressFinancialDataSet.Tables["CustomerDetails.Customers"]);
+                customersDataView.Sort = "CustomerID";
+                table1DataGridView.DataSource = customersDataView;
+                
                 SqlCommandBuilder commands = new SqlCommandBuilder(SqlDataAdapter1);
             }
             catch (Exception ex)
@@ -139,25 +145,6 @@ namespace ITMO2022.ADO.Net.ControlTask
             }
         }
 
-        private void updateButton1_Click(object sender, EventArgs e)
-        {
-            if (connection.State == ConnectionState.Closed)
-            {
-                MessageBox.Show("Сначала подключитесь к базе");
-                return;
-            }
-
-            try
-            {
-                ApressFinancialDataSet.EndInit();
-                SqlDataAdapter1.Update(ApressFinancialDataSet.Tables["CustomerDetails.Customers"]);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Не удалось сохранить данные");
-            }
-        }
-
         private void updateButton2_Click(object sender, EventArgs e)
         {
             if (connection.State == ConnectionState.Closed)
@@ -185,20 +172,11 @@ namespace ITMO2022.ADO.Net.ControlTask
                 return;
             }
 
-            DataRow workRow = CustomersTable.NewRow();
+            DataRowView workRow = customersDataView.AddNew();
+
             workRow["CustomerID"] = 8;
             workRow["CustomerFirstName"] = "Steve";
             workRow["CustomerLastName"] = "Jobs";
-
-            try
-            {
-                ApressFinancialDataSet.Tables["CustomerDetails.Customers"].Rows.Add(workRow);
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Не удалось добавить строку");
-            }
         }
 
         private void addRowInTable2Button_Click(object sender, EventArgs e)
@@ -212,6 +190,7 @@ namespace ITMO2022.ADO.Net.ControlTask
             DataRow workRow = SharesTable.NewRow();
             workRow["ShareID"] = 7;
             workRow["ShareDesc"] = "Gazprom";
+            workRow["CurrentPrice"] = "50";
 
             try
             {
@@ -236,9 +215,8 @@ namespace ITMO2022.ADO.Net.ControlTask
             {
                 long selectedCustomerID =
                 (long)table1DataGridView.SelectedCells[0].OwningRow.Cells["CustomerID"].Value;
-                CustomersTable.PrimaryKey = new DataColumn[] { CustomersTable.Columns["CustomerID"] };
-                DataRow selectedRow = CustomersTable.Rows.Find(selectedCustomerID);
-                ApressFinancialDataSet.Tables["CustomerDetails.Customers"].Rows.Remove(selectedRow);
+                DataRowView selectedRow = customersDataView[customersDataView.Find(selectedCustomerID)];
+                selectedRow.Delete();
             }
 
             catch (Exception ex)
@@ -268,6 +246,12 @@ namespace ITMO2022.ADO.Net.ControlTask
             {
                 MessageBox.Show(ex.Message, "Не удалось удалить строку");
             }
+        }
+
+        private void applySortingAndFilterButton_Click(object sender, EventArgs e)
+        {
+            customersDataView.Sort = sortingTextBox.Text;
+            customersDataView.RowFilter = filterTextBox.Text;
         }
     }
 }

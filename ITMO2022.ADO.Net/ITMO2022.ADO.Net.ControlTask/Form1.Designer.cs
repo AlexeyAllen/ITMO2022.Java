@@ -39,12 +39,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.presentTable1Button = new System.Windows.Forms.Button();
             this.presentTable2Button = new System.Windows.Forms.Button();
-            this.updateButton1 = new System.Windows.Forms.Button();
             this.updateButton2 = new System.Windows.Forms.Button();
             this.addRowInTable1Button = new System.Windows.Forms.Button();
             this.deleteRowInTable1Button = new System.Windows.Forms.Button();
             this.addRowInTable2Button = new System.Windows.Forms.Button();
             this.deleteRowInTable2Button = new System.Windows.Forms.Button();
+            this.applySortingAndFilterButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.sortingTextBox = new System.Windows.Forms.TextBox();
+            this.filterTextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table1DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2DataGridView)).BeginInit();
@@ -57,7 +61,7 @@
             this.подключениеКБДToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1246, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1246, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,7 +71,7 @@
             this.создатьСоединениеToolStripMenuItem,
             this.отключитьСоединениеToolStripMenuItem});
             this.подключениеКБДToolStripMenuItem.Name = "подключениеКБДToolStripMenuItem";
-            this.подключениеКБДToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.подключениеКБДToolStripMenuItem.Size = new System.Drawing.Size(166, 24);
             this.подключениеКБДToolStripMenuItem.Text = "1 Подключение к БД";
             // 
             // создатьСоединениеToolStripMenuItem
@@ -116,7 +120,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(291, 616);
+            this.label3.Location = new System.Drawing.Point(291, 653);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(387, 16);
             this.label3.TabIndex = 5;
@@ -151,16 +155,6 @@
             this.presentTable2Button.UseVisualStyleBackColor = true;
             this.presentTable2Button.Click += new System.EventHandler(this.presentTable2Button_Click);
             // 
-            // updateButton1
-            // 
-            this.updateButton1.Location = new System.Drawing.Point(12, 556);
-            this.updateButton1.Name = "updateButton1";
-            this.updateButton1.Size = new System.Drawing.Size(311, 23);
-            this.updateButton1.TabIndex = 14;
-            this.updateButton1.Text = "Сохранить изменения данных в таблице 1";
-            this.updateButton1.UseVisualStyleBackColor = true;
-            this.updateButton1.Click += new System.EventHandler(this.updateButton1_Click);
-            // 
             // updateButton2
             // 
             this.updateButton2.Location = new System.Drawing.Point(625, 556);
@@ -173,7 +167,7 @@
             // 
             // addRowInTable1Button
             // 
-            this.addRowInTable1Button.Location = new System.Drawing.Point(15, 654);
+            this.addRowInTable1Button.Location = new System.Drawing.Point(12, 687);
             this.addRowInTable1Button.Name = "addRowInTable1Button";
             this.addRowInTable1Button.Size = new System.Drawing.Size(311, 23);
             this.addRowInTable1Button.TabIndex = 16;
@@ -183,7 +177,7 @@
             // 
             // deleteRowInTable1Button
             // 
-            this.deleteRowInTable1Button.Location = new System.Drawing.Point(15, 697);
+            this.deleteRowInTable1Button.Location = new System.Drawing.Point(12, 737);
             this.deleteRowInTable1Button.Name = "deleteRowInTable1Button";
             this.deleteRowInTable1Button.Size = new System.Drawing.Size(311, 23);
             this.deleteRowInTable1Button.TabIndex = 17;
@@ -193,7 +187,7 @@
             // 
             // addRowInTable2Button
             // 
-            this.addRowInTable2Button.Location = new System.Drawing.Point(625, 654);
+            this.addRowInTable2Button.Location = new System.Drawing.Point(625, 687);
             this.addRowInTable2Button.Name = "addRowInTable2Button";
             this.addRowInTable2Button.Size = new System.Drawing.Size(311, 23);
             this.addRowInTable2Button.TabIndex = 18;
@@ -203,7 +197,7 @@
             // 
             // deleteRowInTable2Button
             // 
-            this.deleteRowInTable2Button.Location = new System.Drawing.Point(625, 697);
+            this.deleteRowInTable2Button.Location = new System.Drawing.Point(625, 737);
             this.deleteRowInTable2Button.Name = "deleteRowInTable2Button";
             this.deleteRowInTable2Button.Size = new System.Drawing.Size(311, 23);
             this.deleteRowInTable2Button.TabIndex = 19;
@@ -211,17 +205,65 @@
             this.deleteRowInTable2Button.UseVisualStyleBackColor = true;
             this.deleteRowInTable2Button.Click += new System.EventHandler(this.deleteRowInTable2Button_Click);
             // 
+            // applySortingAndFilterButton
+            // 
+            this.applySortingAndFilterButton.Location = new System.Drawing.Point(12, 595);
+            this.applySortingAndFilterButton.Name = "applySortingAndFilterButton";
+            this.applySortingAndFilterButton.Size = new System.Drawing.Size(314, 23);
+            this.applySortingAndFilterButton.TabIndex = 20;
+            this.applySortingAndFilterButton.Text = "Применить сортировку и фильтр к Таблице 1\r\n\r\n";
+            this.applySortingAndFilterButton.UseVisualStyleBackColor = true;
+            this.applySortingAndFilterButton.Click += new System.EventHandler(this.applySortingAndFilterButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 559);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 16);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Сортировка";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(270, 560);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 16);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Фильтр";
+            // 
+            // sortingTextBox
+            // 
+            this.sortingTextBox.Location = new System.Drawing.Point(104, 557);
+            this.sortingTextBox.Name = "sortingTextBox";
+            this.sortingTextBox.Size = new System.Drawing.Size(131, 22);
+            this.sortingTextBox.TabIndex = 23;
+            this.sortingTextBox.Text = "CustomerTitleId";
+            // 
+            // filterTextBox
+            // 
+            this.filterTextBox.Location = new System.Drawing.Point(332, 556);
+            this.filterTextBox.Name = "filterTextBox";
+            this.filterTextBox.Size = new System.Drawing.Size(131, 22);
+            this.filterTextBox.TabIndex = 24;
+            this.filterTextBox.Text = "CustomerFirstName=\'Julie\'";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1246, 772);
+            this.Controls.Add(this.filterTextBox);
+            this.Controls.Add(this.sortingTextBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.applySortingAndFilterButton);
             this.Controls.Add(this.deleteRowInTable2Button);
             this.Controls.Add(this.addRowInTable2Button);
             this.Controls.Add(this.deleteRowInTable1Button);
             this.Controls.Add(this.addRowInTable1Button);
             this.Controls.Add(this.updateButton2);
-            this.Controls.Add(this.updateButton1);
             this.Controls.Add(this.presentTable2Button);
             this.Controls.Add(this.presentTable1Button);
             this.Controls.Add(this.label5);
@@ -257,12 +299,16 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button presentTable1Button;
         private System.Windows.Forms.Button presentTable2Button;
-        private System.Windows.Forms.Button updateButton1;
         private System.Windows.Forms.Button updateButton2;
         private System.Windows.Forms.Button addRowInTable1Button;
         private System.Windows.Forms.Button deleteRowInTable1Button;
         private System.Windows.Forms.Button addRowInTable2Button;
         private System.Windows.Forms.Button deleteRowInTable2Button;
+        private System.Windows.Forms.Button applySortingAndFilterButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox sortingTextBox;
+        private System.Windows.Forms.TextBox filterTextBox;
     }
 }
 
