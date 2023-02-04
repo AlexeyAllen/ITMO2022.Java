@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ASP.Net.Lab01.Ex01.RSVP", "ITMO2022.ASP.Net.Lab01.Ex01.RSVP\ITMO2022.ASP.Net.Lab01.Ex01.RSVP.csproj", "{4DD6F96B-C868-4421-8E95-8D5D4B5C9C76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ASP.Net.Lab01.Ex01to02.RSVP", "ITMO2022.ASP.Net.Lab01.Ex01to02.RSVP\ITMO2022.ASP.Net.Lab01.Ex01to02.RSVP.csproj", "{4DD6F96B-C868-4421-8E95-8D5D4B5C9C76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
