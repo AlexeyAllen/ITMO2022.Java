@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ASP.Net.Lab02.Ex01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP", "ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP\ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP.csproj", "{3D2A7E61-08CA-459E-BD37-89BF6D70FA72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ASP.Net.Lab04.Ex01to03.RSVP", "ITMO2022.ASP.Net.Lab04.Ex01to03.RSVP\ITMO2022.ASP.Net.Lab04.Ex01to03.RSVP.csproj", "{70CB5311-0741-4C00-9325-DF39374F0A63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3D2A7E61-08CA-459E-BD37-89BF6D70FA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D2A7E61-08CA-459E-BD37-89BF6D70FA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D2A7E61-08CA-459E-BD37-89BF6D70FA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CB5311-0741-4C00-9325-DF39374F0A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CB5311-0741-4C00-9325-DF39374F0A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CB5311-0741-4C00-9325-DF39374F0A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CB5311-0741-4C00-9325-DF39374F0A63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
