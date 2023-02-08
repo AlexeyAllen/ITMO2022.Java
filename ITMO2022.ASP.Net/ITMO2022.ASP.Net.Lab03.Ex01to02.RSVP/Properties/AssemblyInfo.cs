@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ITMO2022.ASP.Net.Lab01.Ex01.RSVP")]
+[assembly: AssemblyTitle("ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ITMO2022.ASP.Net.Lab01.Ex01.RSVP")]
+[assembly: AssemblyProduct("ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

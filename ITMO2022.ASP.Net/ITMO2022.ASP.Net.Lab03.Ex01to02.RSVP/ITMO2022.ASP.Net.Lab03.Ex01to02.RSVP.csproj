@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ITMO2022.ASP.Net.Lab01.Ex01.RSVP</RootNamespace>
-    <AssemblyName>ITMO2022.ASP.Net.Lab01.Ex01.RSVP</AssemblyName>
+    <RootNamespace>ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP</RootNamespace>
+    <AssemblyName>ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -80,9 +80,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\GuestResponse.cs" />
+    <Compile Include="App_Code\GuestResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\ResponseRepository.cs" />
+    <Compile Include="ResponseRepository.cs" />
     <Compile Include="Reg.aspx.cs">
       <DependentUpon>Reg.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -115,7 +115,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

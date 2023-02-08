@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reg.aspx.cs" Inherits="ITMO2022.ASP.Net.Lab01.Ex01.RSVP.Reg" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reg.aspx.cs" Inherits="ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP.Reg" %>
 
 <!DOCTYPE html>
 

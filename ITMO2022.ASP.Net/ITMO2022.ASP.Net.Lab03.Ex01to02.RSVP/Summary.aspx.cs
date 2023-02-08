@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
 
-namespace ITMO2022.ASP.Net.Lab01.Ex01.RSVP
+namespace ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP
 {
     public partial class Summary : System.Web.UI.Page
     {

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="ITMO2022.ASP.Net.Lab01.Ex01.RSVP.Summary" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Summary.aspx.cs" Inherits="ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP.Summary" %>
 
 <!DOCTYPE html>
 
@@ -22,7 +22,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <% var yesData = ITMO2022.ASP.Net.Lab01.Ex01.RSVP.ResponseRepository
+                    <% var yesData = ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP.ResponseRepository
                               .GetRepository().GetAllResponses()
                               .Where(r => r.WillAttend.Value);
                         foreach (var rsvp in yesData)

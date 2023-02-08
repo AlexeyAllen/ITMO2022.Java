@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ITMO2022.ASP.Net.Lab01.Ex01.RSVP
+namespace ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP
 {
 
 

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ITMO2022.ASP.Net.Lab01.Ex01.RSVP
+namespace ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP
 {
     public partial class Start : System.Web.UI.Page
     {
