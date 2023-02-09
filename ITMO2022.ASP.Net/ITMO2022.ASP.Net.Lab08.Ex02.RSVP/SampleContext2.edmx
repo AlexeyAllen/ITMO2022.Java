@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RSVP.SeminarBD.mdfModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="GuestResponses">
+          <Key>
+            <PropertyRef Name="GuestResponseId" />
+          </Key>
+          <Property Name="GuestResponseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Phone" Type="nvarchar(max)" />
+          <Property Name="WillAttend" Type="bit" />
+          <Property Name="Rdata" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Reports">
+          <Key>
+            <PropertyRef Name="ReportId" />
+          </Key>
+          <Property Name="ReportId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameReport" Type="nvarchar(max)" />
+          <Property Name="Annotation" Type="nvarchar(max)" />
+          <Property Name="GuestRes_GuestResponseId" Type="int" />
+        </EntityType>
+        <Association Name="FK_dbo_Reports_dbo_GuestResponses_GuestRes_GuestResponseId">
+          <End Role="GuestResponses" Type="Self.GuestResponses" Multiplicity="0..1" />
+          <End Role="Reports" Type="Self.Reports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GuestResponses">
+              <PropertyRef Name="GuestResponseId" />
+            </Principal>
+            <Dependent Role="Reports">
+              <PropertyRef Name="GuestRes_GuestResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RSVPSeminarBDmdfModelStoreContainer">
+          <EntitySet Name="GuestResponses" EntityType="Self.GuestResponses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Reports" EntityType="Self.Reports" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_dbo_Reports_dbo_GuestResponses_GuestRes_GuestResponseId" Association="Self.FK_dbo_Reports_dbo_GuestResponses_GuestRes_GuestResponseId">
+            <End Role="GuestResponses" EntitySet="GuestResponses" />
+            <End Role="Reports" EntitySet="Reports" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RSVP.SeminarBD.mdfModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="GuestResponses">
+          <Key>
+            <PropertyRef Name="GuestResponseId" />
+          </Key>
+          <Property Name="GuestResponseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="WillAttend" Type="Boolean" />
+          <Property Name="Rdata" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Reports" Relationship="Self.FK_dbo_Reports_dbo_GuestResponses_GuestRes_GuestResponseId" FromRole="GuestResponses" ToRole="Reports" />
+        </EntityType>
+        <EntityType Name="Reports">
+          <Key>
+            <PropertyRef Name="ReportId" />
+          </Key>
+          <Property Name="ReportId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameReport" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Annotation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GuestRes_GuestResponseId" Type="Int32" />
+          <NavigationProperty Name="GuestResponses" Relationship="Self.FK_dbo_Reports_dbo_GuestResponses_GuestRes_GuestResponseId" FromRole="Reports" ToRole="GuestResponses" />
+        </EntityType>
+        <Association Name="FK_dbo_Reports_dbo_GuestResponses_GuestRes_GuestResponseId">
+          <End Role="GuestResponses" Type="Self.GuestResponses" Multiplicity="0..1" />
+          <End Role="Reports" Type="Self.Reports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GuestResponses">
+              <PropertyRef Name="GuestResponseId" />
+            </Principal>
+            <Dependent Role="Reports">
+              <PropertyRef Name="GuestRes_GuestResponseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GuestResponses" EntityType="Self.GuestResponses" />
+          <EntitySet Name="Reports" EntityType="Self.Reports" />
+          <AssociationSet Name="FK_dbo_Reports_dbo_GuestResponses_GuestRes_GuestResponseId" Association="Self.FK_dbo_Reports_dbo_GuestResponses_GuestRes_GuestResponseId">
+            <End Role="GuestResponses" EntitySet="GuestResponses" />
+            <End Role="Reports" EntitySet="Reports" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RSVPSeminarBDmdfModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="GuestResponses">
+            <EntityTypeMapping TypeName="RSVP.SeminarBD.mdfModel.GuestResponses">
+              <MappingFragment StoreEntitySet="GuestResponses">
+                <ScalarProperty Name="GuestResponseId" ColumnName="GuestResponseId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="WillAttend" ColumnName="WillAttend" />
+                <ScalarProperty Name="Rdata" ColumnName="Rdata" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reports">
+            <EntityTypeMapping TypeName="RSVP.SeminarBD.mdfModel.Reports">
+              <MappingFragment StoreEntitySet="Reports">
+                <ScalarProperty Name="ReportId" ColumnName="ReportId" />
+                <ScalarProperty Name="NameReport" ColumnName="NameReport" />
+                <ScalarProperty Name="Annotation" ColumnName="Annotation" />
+                <ScalarProperty Name="GuestRes_GuestResponseId" ColumnName="GuestRes_GuestResponseId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
