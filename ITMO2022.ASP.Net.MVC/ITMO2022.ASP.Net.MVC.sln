@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ASP.Net.MVC.Lab01.Ex01toEx03.WebMVCR1", "ITMO2022.ASP.Net.MVC.Lab01.Ex01toEx03.WebMVCR1\ITMO2022.ASP.Net.MVC.Lab01.Ex01toEx03.WebMVCR1.csproj", "{8E8FF64A-FE89-4167-8B27-CE4455249E77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO2022.ASP.Net.MVC.Lab02.Ex01toEx05.WebMVCR1", "ITMO2022.ASP.Net.MVC.Lab02.Ex01toEx05.WebMVCR1\ITMO2022.ASP.Net.MVC.Lab02.Ex01toEx05.WebMVCR1.csproj", "{56849F51-44C5-4C2F-A865-31AE54725F53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E8FF64A-FE89-4167-8B27-CE4455249E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8FF64A-FE89-4167-8B27-CE4455249E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8FF64A-FE89-4167-8B27-CE4455249E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8FF64A-FE89-4167-8B27-CE4455249E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56849F51-44C5-4C2F-A865-31AE54725F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56849F51-44C5-4C2F-A865-31AE54725F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56849F51-44C5-4C2F-A865-31AE54725F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56849F51-44C5-4C2F-A865-31AE54725F53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EF1075C-B2FA-42B6-BDF9-360E46934BDC}
+	EndGlobalSection
+EndGlobal
