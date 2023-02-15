@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ITMO2022.ASP.Net.ControlTask.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Успеваемость студента по дисциплине</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style3 {
+            width: 300px;
+            height: 150px;
+        }
+
+        .auto-style4 {
+            width: 139px;
+            height: 50px;
+        }
+
+        .auto-style6 {
+            width: 246px;
+        }
+
+        .auto-style8 {
+            height: 47px;
+        }
+
+        .auto-style9 {
+            width: 100px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2" class="auto-style8"><h3>Успеваемость студента по дисциплине</h3></td>
+            </tr>
+            <tr>
+                <td class="auto-style9" style="width: 40%">&nbsp; <h3>Меню</h3> 
+                    <div class="auto-style6">
+                        <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                            Orientation="Vertical" ForeColor="Red">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Start.aspx" Text="1. Главная" />
+                                <asp:MenuItem NavigateUrl="~/StudentInfoInput.aspx" Text="2. Ввод данных" />
+                                <%--<asp:MenuItem NavigateUrl="~/Summary.aspx" Text="Отчет о введенных данных" />--%>
+                                <asp:MenuItem NavigateUrl="~/Summary5BestAndWorst.aspx" Text="3. Информация о 5 лучших<br> и 5 худших студентах" />
+                                <%--<asp:MenuItem NavigateUrl="~/Summary5Worst.aspx" Text="4. Информация о 5 худших студентах" />--%>
+                                <asp:MenuItem NavigateUrl="~/SummaryAll.aspx" Text="4. Информация обо всех студентах,<br> сумма баллов, удаление выбранных <br>студентов из БД" />
+                            </Items>
+                        </asp:Menu>
+                    </div>
+                </td>
+                <td class="auto-style3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="auto-style4">&nbsp; <%--Нижний колонтитул--%>
+                    <div id="temo_footer">
+                        <ul class="footer_menu">
+                            <li><a href="Start.aspx">Главная</a></li>
+                            <li><a href="StudentInfoInput.aspx">Ввод данных</a></li>
+                            <%--<li><a href="Summary.aspx">Отчет о студентах</a></li>--%>
+                            <li><a href="Summary5BestAndWorst.aspx"> Информация о 5 лучших и 5 худших студентах</a></li>
+                            <%--<li><a href="Summary5Worst.aspx"> Информация о 5 худших студентах</a></li>--%>
+                            <li><a href="SummaryAll.aspx"> Информация обо всех студентах</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

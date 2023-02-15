@@ -1,6 +1,25 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SummaryBD.aspx.cs" Inherits="ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP.SummaryBD" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SummaryBD.aspx.cs" Inherits="ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP.SummaryBD" MasterPageFile="~/Site.master"%>
 
-<!DOCTYPE html>
+
+<asp:Content ID="MainContent2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div>
+        <h2>Список участников</h2>
+        <asp:GridView ID="GridView2" runat="server" DataSourceID="SqlDataSource1" AutoGenerateColumns="False">
+            <Columns>
+                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
+                <asp:BoundField DataField="Rdata" HeaderText="Rdata" SortExpression="Rdata" />
+            </Columns>
+             </asp:GridView>
+             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ 
+                 ConnectionStrings:SeminarBD %>" SelectCommand="SELECT [Name], [Email], [Phone], 
+                 [WillAttend], [Rdata] FROM [GuestResponses]"></asp:SqlDataSource>
+    </div>
+</asp:Content>
+
+
+<%--<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -9,10 +28,17 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridView1" runat="server" DataSourceID="LinqDataSource2"></asp:GridView>
-            <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="Entities" EntityTypeName="">
-            </asp:LinqDataSource>
+             <h2>Список участников</h2>
+        <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AutoGenerateColumns="False">
+            <Columns>
+                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
+                <asp:BoundField DataField="Rdata" HeaderText="Rdata" SortExpression="Rdata" />
+            </Columns>
+             </asp:GridView>
+             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SeminarBD %>" SelectCommand="SELECT [Name], [Email], [Phone], [WillAttend], [Rdata] FROM [GuestResponses]"></asp:SqlDataSource>
         </div>
     </form>
 </body>
-</html>
+</html>--%>

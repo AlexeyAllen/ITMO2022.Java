@@ -7,29 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP
+namespace ITMO2022.ASP.Net.ControlTask
 {
 
 
-    public partial class SummaryBD
+    public partial class WebForm2
     {
 
         /// <summary>
-        /// GridView2 control.
+        /// GridViewWorst control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.GridView GridViewWorst;
 
         /// <summary>
-        /// SqlDataSource1 control.
+        /// SqlDataSourceWorst control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceWorst;
     }
 }

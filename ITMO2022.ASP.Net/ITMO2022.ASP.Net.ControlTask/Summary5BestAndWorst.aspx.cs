@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ITMO2022.ASP.Net.Lab03.Ex01to02.RSVP
+namespace ITMO2022.ASP.Net.ControlTask
 {
-    public partial class SummaryBD : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
