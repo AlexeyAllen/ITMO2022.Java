@@ -77,10 +77,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\StudentScoreDB3.mdf" />
-    <Content Include="Data\StudentScoreDB3_log.ldf">
-      <DependentUpon>StudentScoreDB3.mdf</DependentUpon>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="InputDataAccepted.html" />
     <Content Include="Summary.aspx" />
@@ -154,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
