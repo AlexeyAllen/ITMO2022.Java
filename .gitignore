@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /ITMO2022.ASP.Net/ITMO2022.ASP.Net.ControlTask/Data/StudentScoreDB3_log.ldf
 /ITMO2022.ASP.Net/ITMO2022.ASP.Net.ControlTask/Data/StudentScoreDB3.mdf
+/ITMO2022.ASP.Net/ITMO2022.ASP.Net.ControlTask/Data/StudentScoreDB3_log.ldf
+/ITMO2022.ASP.Net/ITMO2022.ASP.Net.ControlTask/Data/StudentScoreDB3.mdf
