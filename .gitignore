@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/ITMO2022.ASP.Net/ITMO2022.ASP.Net.ControlTask/Data/StudentScoreDB3_log.ldf
+/ITMO2022.ASP.Net/ITMO2022.ASP.Net.ControlTask/Data/StudentScoreDB3.mdf
