@@ -7,16 +7,25 @@
         <h2>Введите личные данные студента и данные о его успеваемости (от 1 до 5) по дисциплине "Базы данных"</h2>
         <div>
             <asp:ValidationSummary ID="validationSummary" runat="server" ShowModelStateErrors="true" />
+
             <label>Имя:</label><asp:TextBox ID="firstName" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                 ControlToValidate="firstName" ErrorMessage="Заполните поле имени" 
                 ForeColor="Red">Не оставляйте поле пустым</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator runat="server" ControlToValidate="firstName" 
+                ValidationExpression="^[a-zA-ZА-Яа-я]*$"
+                ErrorMessage="Name is not in a valid format" Display="Dynamic" 
+                ForeColor="Red">Имя введено неверно!!!</asp:RegularExpressionValidator>
         </div>
         <div>
             <label>Фамилия</label><asp:TextBox ID="lastName" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                 ControlToValidate="firstName" ErrorMessage="Заполните поле фамилии" 
                 ForeColor="Red">Не оставляйте поле пустым</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator runat="server" ControlToValidate="lastName" 
+                ValidationExpression="^[a-zA-ZА-Яа-я]*$"
+                ErrorMessage="Name is not in a valid format" Display="Dynamic" 
+                ForeColor="Red">Имя введено неверно!!!</asp:RegularExpressionValidator>
         </div>
         <div>
             <label>email:</label><asp:TextBox ID="email" runat="server"></asp:TextBox>
