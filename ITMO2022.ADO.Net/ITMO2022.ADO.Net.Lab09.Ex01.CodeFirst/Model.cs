@@ -33,6 +33,7 @@ namespace ITMO2022.ADO.Net.Lab09.Ex01.CodeFirst
         public Customer()
         {
             Orders = new List<Order>();
+
         }
     }
 
