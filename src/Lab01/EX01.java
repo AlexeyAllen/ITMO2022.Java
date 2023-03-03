@@ -6,5 +6,6 @@ public class EX01 {
         System.out.println("хорошо");
         System.out.println("знаю");
         System.out.println("Java");
+
     }
 }

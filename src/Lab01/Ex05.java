@@ -17,5 +17,6 @@ public class Ex05 {
         System.out.println(num1);
         System.out.println(num2);
         System.out.println(num3);
+
     }
 }
