@@ -7,6 +7,8 @@ public class Part1Ex03 {
         sumDivByThirdNum();
     }
     public static void sumDivByThirdNum(){
+        boolean resultIsTrue = true;
+        boolean resultIsFalse = false;
         Scanner in = new Scanner(System.in);
         System.out.print("Введите первое число: ");
         int numberOne = in.nextInt();
@@ -14,10 +16,13 @@ public class Part1Ex03 {
         int numberTwo = in.nextInt();
         System.out.print("Введите третье число: ");
         int numberThree = in.nextInt();
-        if (numberOne + numberTwo == numberThree) {
-            System.out.print("Результат: true");
-        } else {
-            System.out.print("Результат: false");
-        }
+
+        System.out.println((numberOne + numberTwo == numberThree)? "Результат: " + resultIsTrue: "Результат: " + resultIsFalse);
+
+//        if (numberOne + numberTwo == numberThree) {
+//            System.out.print("Результат: true");
+//        } else {
+//            System.out.print("Результат: false");
+//        }
     }
 }

@@ -8,6 +8,8 @@ public class Part1Ex04 {
     }
 
     public static  void numsMoreAndLess(){
+        boolean resultIsTrue = true;
+        boolean resultIsFalse = false;
         Scanner in = new Scanner(System.in);
         System.out.print("Введите первое число: ");
         int numberOne = in.nextInt();
@@ -16,7 +18,7 @@ public class Part1Ex04 {
         System.out.print("Введите третье число: ");
         int numberThree = in.nextInt();
 
-        System.out.println((numberOne < numberTwo && numberTwo < numberThree)? "Результат: true": "Результат: false");
+        System.out.println((numberOne < numberTwo && numberTwo < numberThree)? "Результат: " + resultIsTrue: "Результат: " + resultIsFalse);
 
 //        if (numberOne < numberTwo && numberTwo < numberThree) {
 //            System.out.print("Результат: true");
