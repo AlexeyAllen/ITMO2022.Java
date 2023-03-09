@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class Part2Ex02 {
     public static void main(String[] args) {
+       arrayInputOutput();
+    }
+
+    public static void arrayInputOutput(){
         Scanner in = new Scanner(System.in);
         System.out.print("Array length: ");
         int arrayLength = in.nextInt();

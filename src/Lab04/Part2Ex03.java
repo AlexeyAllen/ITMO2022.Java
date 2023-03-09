@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 public class Part2Ex03 {
     public static void main(String[] args) {
+        firstAndLastSubst();
+    }
+
+    public static void firstAndLastSubst(){
         int[] intArray = new int[]{2, 6, 2, 56, 4};
         System.out.println("Array 1: " + Arrays.toString(intArray));
         int temp = intArray[0];

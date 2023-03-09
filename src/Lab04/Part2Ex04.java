@@ -5,7 +5,10 @@ import java.util.Arrays;
 public class Part2Ex04 {
 
     public static void main(String[] args) {
+        firstUnique();
+    }
 
+    public static void firstUnique(){
         boolean isNotUnique = true;
         int[] intArray = new int[]{2, 6, 2, 6, 6, 4, 9};
 
