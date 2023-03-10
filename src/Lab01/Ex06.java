@@ -15,6 +15,7 @@ public class Ex06 {
             System.out.println("Выход за пределы диапазона");
         } else if (b % 2 == 0) {
             System.out.println("Четное");
+
         }
     }
 }
