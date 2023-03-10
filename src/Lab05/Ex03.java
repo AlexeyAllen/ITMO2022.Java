@@ -10,6 +10,7 @@ public class Ex03 {
                 "Letraset с образцами бяка Ipsum в 60-х годах и, в более недавнее время, программы электронной " +
                 "вёрстки типа Aldus PageMaker, в шаблонах которых используется бяка Ipsum.";
 
+
         wordsSubstitution(stringSample);
     }
 

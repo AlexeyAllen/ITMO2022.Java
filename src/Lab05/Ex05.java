@@ -6,6 +6,7 @@ public class Ex05 {
         System.out.println("The given string is: " + string);
         System.out.println("The string reversed word by word is:");
         System.out.println(reverseWord(string));
+
     }
 
     public static String reverseWord(String sentence) {

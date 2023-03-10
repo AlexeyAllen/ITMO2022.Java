@@ -11,6 +11,7 @@ public class Ex04 {
                 "вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.";
         String subString = "Lorem";
 
+
         subStrCount(stringMain, subString);
     }
     public static void subStrCount (String stringMainSample, String subStringSample) {

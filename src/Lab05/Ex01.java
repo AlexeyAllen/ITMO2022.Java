@@ -10,7 +10,6 @@ public class Ex01 {
                 "Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной " +
                 "вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.";
 
-
         defineLongestWord(stringSample.split(" "));
     }
 
