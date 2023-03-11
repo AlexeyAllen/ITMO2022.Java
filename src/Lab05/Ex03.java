@@ -10,13 +10,13 @@ public class Ex03 {
                 "Letraset с образцами бяка Ipsum в 60-х годах и, в более недавнее время, программы электронной " +
                 "вёрстки типа Aldus PageMaker, в шаблонах которых используется бяка Ipsum.";
 
-
         wordsSubstitution(stringSample);
     }
 
     public static void wordsSubstitution(String str) {
-        str = str.replaceAll("\\bбяка\\b", "[вырезано цензурой]");
+        String regex = "бяка";
+        String replacement = "[вырезано цензурой]";
+        str = str.replaceAll(regex, replacement);
         System.out.println("The String after substitution : " + str);
     }
-
 }
