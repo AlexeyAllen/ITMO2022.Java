@@ -7,11 +7,7 @@ public class NoDuplicate {
 
     public void noDuplicate(List<String> stringList) {
 
-        HashSet<String> itemList = new HashSet<>();
-
-        for (int i = 0; i < stringList.size(); i++) {
-            itemList.add(stringList.get(i));
-        }
+        HashSet<String> itemList = new HashSet<>(stringList);
 
         for (String item : itemList) {
             System.out.println(item);
