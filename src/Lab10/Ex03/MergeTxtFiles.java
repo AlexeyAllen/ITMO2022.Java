@@ -4,18 +4,18 @@ import java.io.*;
 
 public class MergeTxtFiles {
 
-    void mergeTxtFiles() {
+    void mergeTxtFiles(String pathToFirstFile, String pathToSecondFile, String PathToThirdFile) {
         PrintWriter printWriter = null;
         BufferedReader bufferedReader = null;
         try {
-            printWriter = new PrintWriter("src/Lab10/Ex03/thirdTxtFile.txt");
-            bufferedReader = new BufferedReader(new FileReader("src/Lab10/Ex01/SampleEx01.txt"));
+            printWriter = new PrintWriter(PathToThirdFile);
+            bufferedReader = new BufferedReader(new FileReader(pathToFirstFile));
             String text = bufferedReader.readLine();
             while (text != null) {
                 printWriter.println(text);
                 text = bufferedReader.readLine();
             }
-            bufferedReader = new BufferedReader(new FileReader("src/Lab10/Ex02/SampleEx02.txt"));
+            bufferedReader = new BufferedReader(new FileReader(pathToSecondFile));
             text = bufferedReader.readLine();
             while (text != null) {
                 printWriter.println(text);
