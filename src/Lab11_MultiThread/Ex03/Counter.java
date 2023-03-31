@@ -7,7 +7,7 @@ class Counter {
         return count;
     }
 
-    static void Increment() {
+    public static void increment() {
         count += 1;
     }
 }

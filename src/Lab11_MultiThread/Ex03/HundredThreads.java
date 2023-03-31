@@ -1,21 +1,32 @@
 package Lab11_MultiThread.Ex03;
 
-public class HundredThreads {
-    void hundThreads(){
-        try {
-            for (int i = 0; i < 100; i++) {
-                Thread thread = new Thread(() -> {
-                    for (int j = 0; j < 1000; j++) {
-                        Counter.Increment();
-                    }
-                });
-                thread.start();
-                thread.join();
-            }
-            System.out.printf("Result: %d %n", Counter.getCount());
+public class HundredThreads extends Thread {
+
+    Counter counter;
+    int threadsNum = 100;
+    int incremNum = 1000;
+
+    public HundredThreads(Counter counter) {
+        this.counter = counter;
+    }
+
+    public void threadCounter() throws InterruptedException {
+        Thread[] threads = new Thread[threadsNum];
+        for (int i = 0; i < threadsNum; ++i) {
+            threads[i] = new Thread(new HundredThreads(counter));
+            threads[i].start();
         }
-        catch (InterruptedException e) {
-            e.printStackTrace();
+        Thread.sleep(50);
+        System.out.println("Final count value is: " + counter.getCount());
+    }
+
+    public void run() {
+        synchronized (counter) {
+            for (int i = 0; i < incremNum; ++i) {
+                counter.increment();
+            }
         }
     }
 }
+
+
