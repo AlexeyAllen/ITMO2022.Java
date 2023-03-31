@@ -16,16 +16,17 @@ public class HundredThreads extends Thread {
             threads[i] = new Thread(new HundredThreads(counter));
             threads[i].start();
         }
-        Thread.sleep(50);
-        System.out.println("Final count value is: " + counter.getCount());
     }
 
     public void run() {
         synchronized (counter) {
             for (int i = 0; i < incremNum; ++i) {
                 counter.increment();
+                System.out.println("Current threadsNum: " + Thread.currentThread().getName() + "Current incremNum: " + counter.getCount());
             }
         }
+        System.out.println("Final count value is: " + counter.getCount());
+
     }
 }
 
